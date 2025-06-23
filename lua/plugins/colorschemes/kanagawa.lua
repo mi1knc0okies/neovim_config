@@ -1,7 +1,7 @@
 return {
 	"rebelot/kanagawa.nvim",
 	priority = 1000,
-	cond = vim.g.setup.colorscheme == "kanagawa",
+
 	config = function()
 		require("kanagawa").setup({
 			transparent = vim.g.transparent_enabled,
@@ -20,7 +20,7 @@ return {
 				}
 			end,
 		})
-		vim.cmd.colorscheme("kanagawa")
+
 		local function changeVisual()
 			if vim.o.background == "dark" and vim.g.colors_name == "kanagawa" then
 				vim.api.nvim_set_hl(0, "Visual", { bg = "#334155" })

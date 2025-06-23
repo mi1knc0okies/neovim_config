@@ -1,7 +1,6 @@
 return {
 	"olimorris/onedarkpro.nvim",
 	priority = 1000,
-	cond = vim.g.setup.colorscheme == "onedark",
 	config = function()
 		require("onedarkpro").setup({
 			filetypes = { markdown = false },
@@ -15,7 +14,7 @@ return {
 				transparency = true,
 			},
 		})
-		vim.cmd.colorscheme("onedark_vivid")
+		
 		for i = 1, 6 do
 			vim.cmd("highlight clear markdownH" .. i)
 		end
