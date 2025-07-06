@@ -14,7 +14,7 @@ return {
 				transparency = true,
 			},
 		})
-		
+	  vim.cmd.colorscheme("onedark_dark")	
 		for i = 1, 6 do
 			vim.cmd("highlight clear markdownH" .. i)
 		end
